@@ -46,7 +46,7 @@ app.use(bodyParser.json());
 //----------------------------------------------------------------------------------
 //------------------------------ BD ------------------------------------------------
 // Connect to Mongoose and set connection variable
-let bdUrl = 'mongodb://adminuser:guacamayo"23FPernocta@localhost/theclub333';
+let bdUrl = 'mongodb://localhost/theclub333';
 mongoose
   .connect(bdUrl, {
     useNewUrlParser: true,
