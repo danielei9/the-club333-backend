@@ -21,7 +21,7 @@ exports.index = function (req, res) {
         }
         res.json({
             status: "success",
-            message: "Sensors retrieved successfully",
+            message: "Form retrieved successfully",
             data: sensors
         });
     });
@@ -115,7 +115,7 @@ exports.delete = function (req, res) {
             res.send(err);
         res.json({
             status: "success",
-            message: 'Sensor deleted'
+            message: 'Form deleted'
         });
     });
 };
