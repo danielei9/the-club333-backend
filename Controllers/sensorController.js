@@ -37,8 +37,8 @@ exports.new = function (req, res) {
     //  sensor.activeDate = Date;
     sensor.name = req.body.name;
     sensor.email = req.body.email;
-    sensor.description = req.body.description;
     sensor.address = req.body.address;
+    sensor.msg = req.body.msg;
     // save the sensor and check for errors
     sensor.save(function (err) {
         // Check for validation error
@@ -88,7 +88,7 @@ exports.update = function (req, res) {
             res.send(err);
         sensor.activeDate = req.body.ActiveDate;
         sensor.type = req.body.type;
-        sensor.address = req.body.address;
+        sensor.msg = req.body.msg;
         // save the sensor and check for errors
         sensor.save(function (err) {
             if (err)

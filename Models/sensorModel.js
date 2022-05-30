@@ -13,7 +13,7 @@ var sensorSchema = mongoose.Schema({
      name: String,
      address: String,
      email: String,
-     description: String
+     msg: String
 });
 //export
 var Sensor = module.exports = mongoose.model('formInformation', sensorSchema);
